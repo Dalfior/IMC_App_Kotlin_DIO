@@ -9,6 +9,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Log.w("lifecycle", "entrei no CREATE - estou criando a tela")
+        //finish() - PULA O CLICLO DE VIDA. Unico contexto que o ciclo não é respeitado.
+        // Destroi a tela imediatamente levando direto par ao medoto onDestroy. CREATE E DESTROY
     }
     override fun onStart(){
         super.onStart()
